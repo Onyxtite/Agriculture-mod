@@ -18,7 +18,6 @@ public class AgricultureMod
 {
     public static final String MODID = "examplemod";
     public static final String VERSION = "1.0";
-
     
     @EventHandler 
     public void PreInit(FMLPreInitializationEvent preEvent){
@@ -27,7 +26,9 @@ public class AgricultureMod
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-    GameRegistry.addSmelting(Blocks.dirt, new ItemStack(Items.diamond, 5), 0.5f);
+    GameRegistry.addSmelting(Blocks.dirt, new ItemStack(Items.diamond, 5), 1000.5f);
+    GameRegistry.addSmelting(Blocks.stone, new ItemStack(Items.apple, 71), 5000.9f);
+    
     }
     
     @EventHandler
